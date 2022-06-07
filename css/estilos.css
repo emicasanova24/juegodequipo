@@ -1,0 +1,257 @@
+body {
+    background: rgb(110,9,121);
+    background: -moz-radial-gradient(circle, rgba(110,9,121,1) 38%, rgba(0,212,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(110,9,121,1) 38%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(circle, rgba(110,9,121,1) 38%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6e0979",endColorstr="#00d4ff",GradientType=1);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+
+
+/*
+.header {
+    background-color: #ffa6f2;
+    display: flex;
+    height: 100px;
+    justify-content: center; 
+    align-items: center; 
+    padding: 1rem 1.2rem;
+    margin: 0px;
+}
+*/
+
+.header img {
+    width: 200px;
+    height: 70px;
+    padding: 0px 20px;
+}
+
+.btn {
+    list-style: none;
+    padding: 10px;
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.header .btn:hover {
+    background-color: black;
+}
+
+.fa {
+    padding: 20px;
+    margin: 2px;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    text-align: center;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+    align-items: center;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+    align-items: center;
+  }
+.fa-facebook:hover {
+    opacity: 0.7;
+}
+.fa-instagram:hover {
+    opacity: 0.7;
+}
+.fa-google:hover {
+    opacity: 0.7;
+}
+
+/*grid layout*/
+.grid-layout {
+    width: 50%;
+    margin: auto;
+    padding: 20px 0px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 'noticia1 noticia1'
+                        'noticia1 noticia1'
+                        'noticia2 noticia3'
+                        ' noticia4 noticia5';
+}
+.caja {
+    border: 4px solid black;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 200px;
+}
+
+.c1 {
+    grid-area: noticia1;
+    display: flex;
+    justify-content: center;
+}
+
+.c2 {
+    grid-area: noticia2;
+}
+
+.c3 {
+    grid-area: noticia3;
+}
+
+
+/*fin grid layout*/
+
+/*qs*/
+.fondo {
+    background-color: #32063a;
+    width: 100%;
+    display: flex;
+    gap: 20px 
+}
+
+
+.textoind p {
+    padding: 10px 300px;
+    text-align: center;
+
+}
+
+
+
+.formreg {
+    background-color: #ffa6f2;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid rgb(21, 147, 161);
+}
+
+.imgfixture {
+    width: 1000px;
+    height: 1300px;
+    display: block;
+    margin: 20px auto;   
+}
+
+.video {
+    margin: 0px auto;
+    text-align: center;
+    padding: 50px;
+    width: 1000px;
+    height: 500px;
+
+}
+
+
+
+.escudos {
+    background-color: rgba(255, 16, 231, 0.453);
+    display: flex;
+    justify-content: center;
+}
+
+.escudos img {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+}
+.posicionesimg img {
+    width: 1000px;
+    height: 1300px;
+
+}
+
+  /*Posiciones*/
+
+
+.posiciones-apertura h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5vh;
+}
+
+.imgposiciones {
+    width: 50%;
+    height: auto;
+}
+  
+
+  @media only screen and (max-width: 1000px) {
+
+    body {
+        margin: 0px;
+        width: auto;
+    }
+    .header {
+        background-color: transparent;
+        height: auto;
+        margin: 0px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header img {
+        width: 300px;
+        height: auto;
+        padding: 0px 10px 20px 20px;
+    }
+    .btn {
+        padding: 10px;
+      height: 20px auto;
+    }
+    .escudos {
+        display: none;
+    }
+    .grid-layout {
+        width: 80%;
+        padding: 20px 0px;
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 'noticia1 noticia1 '
+                             'noticia1 noticia1'
+                             'noticia1 noticia1'
+                              'noticia2 noticia3'
+                              'noticia2 noticia3'
+                             'noticia4 noticia5';
+    }
+    
+    /*Fixture*/
+
+    .imgfixture {
+        width: 100%;
+        height: auto;
+    }
+
+    /*Posiciones*/
+
+    .imgposiciones {
+        width: 80%;
+        height: auto;
+    }
+    .posiciones-apertura h2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 5vh;
+    }
+    
+    /*Partidos*/
+
+    .video {
+        width: auto;
+    }
+    .imgfixture {
+        width: 70%;
+        height: auto;
+    }
+    } 
