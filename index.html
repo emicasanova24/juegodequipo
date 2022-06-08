@@ -4,43 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gitJuego de Equipo</title>
+    <title>Juego de Equipo</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-xl navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./vistas/partidos.html">Partidos</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse show" id="navbarBasic">
-                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./vistas/fixture.html">Fixture</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./vistas/posiciones.html">Posiciones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./vistas/qsomos.html">¿Quienes somos?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="./vistas/contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-            
-            
+    <header class="header">
+      <img src="../assets/logo.png" class="img-fluid" alt="img-fluid">
+      <nav>
+          <a href="./index.html"><button class="btn">Inicio</button></a>
+          <a href="./vistas/partidos.html"><button class="btn">Partidos</button> </a>
+          <a href="./vistas/contacto.html"><button class="btn">Contacto</button></a>
+          <a href="./vistas/posiciones.html"><button class="btn">Posiciones</button></a>
+          <a href="./vistas/fixture.html"><button class="btn">Fixture</button> </a>
+      </nav>
+
             <section class="fa">
                 <a href="https://www.facebook.com/juegodquipo" class="fa fa-facebook"></a>
                 <a href="https://www.instagram.com/juegodequipo" class="fa fa-instagram"></a>
@@ -48,43 +28,56 @@
             </section>    
     </header>
     <section class="escudos">
-        <a href="./argentino.html"><img src="./assets/ARGENTINO.png" alt="argentino"></a>
-        <a href="./roberts.html"> <img src="./assets/Cecil-A-Roberts.png" alt="roberts"> </a> 
-        <a href="./maza.html"> <img src="./assets/Club-Maza.png" alt="maza"> </a>
-        <a href="./quenuma.html"> <img src="./assets/Club-Quenuma.png" alt="quenuma"></a> 
-        <a href="./dieci.html"> <img src="./assets/Deportivo-17.png" alt="deportivodieci"></a>
-        <a href="./deparg.html"> <img src="./assets/Deportivo-Argentino.png" alt="deportivoarg"></a>
-        <a href="./garre.html"> <img src="./assets/Deportivo-GARRE-OK.png" alt="garre"></a> 
-        <a href="./ceibo.html"> <img src="./assets/ElCeibo-OK.png" alt="ceibo"></a>
-        <a href="./ferro.html"> <img src="./assets/FerroCarrilOesteOK.png" alt="ferro"></a>  
-        <a href="./newbery.html"> <img src="./assets/Jorge-Newbery.png" alt="newbery"></a>
-        <a href="./juventud.html"> <img src="./assets/Juventud-Unida.png" alt="juventud"></a> 
-        <a href="./gloria.html"> <img src="./assets/La-Gloria.png" alt="lagloria"></a>
-        <a href="./salazar.html"> <img src="./assets/SALAZAR-FC.png" alt="salazar"> </a>
-        <a href="./bonifacio.html"> <img src="./assets/Union-de-Bonifacio.png" alt="uniondb"></a>
-        <a href="./union.html">  <img src="./assets/Union-de-Tres-Lomas.png" alt="uniondt"></a>
-        <a href="./villa.html">  <img src="./assets/Villa-Del-Parque.png" alt="villadp"></a>
+        <a href="./vistas/argentino.html"><img src="./assets/ARGENTINO.png" alt="argentino"></a>
+        <a href="./vistas/roberts.html"> <img src="./assets/Cecil-A-Roberts.png" alt="roberts"> </a> 
+        <a href="./vistas/maza.html"> <img src="./assets/Club-Maza.png" alt="maza"> </a>
+        <a href="./vistas/quenuma.html"> <img src="./assets/Club-Quenuma.png" alt="quenuma"></a> 
+        <a href="./vistas/dieci.html"> <img src="./assets/Deportivo-17.png" alt="deportivodieci"></a>
+        <a href="./vistas/deparg.html"> <img src="./assets/Deportivo-Argentino.png" alt="deportivoarg"></a>
+        <a href="./vistas/garre.html"> <img src="./assets/Deportivo-GARRE-OK.png" alt="garre"></a> 
+        <a href="./vistas/ceibo.html"> <img src="./assets/ElCeibo-OK.png" alt="ceibo"></a>
+        <a href="./vistas/ferro.html"> <img src="./assets/FerroCarrilOesteOK.png" alt="ferro"></a>  
+        <a href="./vistas/newbery.html"> <img src="./assets/Jorge-Newbery.png" alt="newbery"></a>
+        <a href="./vistas/juventud.html"> <img src="./assets/Juventud-Unida.png" alt="juventud"></a> 
+        <a href="./vistas/gloria.html"> <img src="./assets/La-Gloria.png" alt="lagloria"></a>
+        <a href="./vistas/salazar.html"> <img src="./assets/SALAZAR-FC.png" alt="salazar"> </a>
+        <a href="./vistas/bonifacio.html"> <img src="./assets/Union-de-Bonifacio.png" alt="uniondb"></a>
+        <a href="./vistas/union.html">  <img src="./assets/Union-de-Tres-Lomas.png" alt="uniondt"></a>
+        <a href="./vistas/villa.html">  <img src="./assets/Villa-Del-Parque.png" alt="villadp"></a>
     </section>
-    <div class="grid-layout">
-        <div class="caja c1">
-            noticia1
+    <div class="card-group">
+      <div class="card d-flex">
+        <img src="assets/protagonistas.jpg" class="card-img-top" alt="card-group-image">
+        <div class="card-body">
+          <h5 class="card-title">Protagonistas de la Fecha 12</h5>
+          <p class="card-text">Conocé el 11 inicial de cada equipo y las incidencias de todos los partidos de Primera División que se disputaron en la fecha.</p>
         </div>
-        <div class="caja c2">
-            noticia2
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
         </div>
-        <div class="caja c3">
-            noticia3
+      </div>
+      <div class="card d-flex">
+        <img src="assets/newberyn2.jpg" class="card-img-top" alt="card-group-image">
+        <div class="card-body">
+          <h5 class="card-title">Newbery alcanzó a Quenuemá y ahora el Apertura tiene dos líderes
+          </h5>
+          <p class="card-text">El campeonato se puso apasionante. Quenumá no le pudo ganar a Deportivo y permitió que Newbery lo alcance y que Unión quede a solo dos puntos de lo más alto.</p>
         </div>
-        <div class="caja c4">
-            noticia4
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
         </div>
-        <div class="caja c5">
-            noticia5
+      </div>
+      <div class="card d-flex">
+        <img src="assets/inferiores.jpg" class="card-img-top" alt="card-group-image">
+        <div class="card-body">
+          <h5 class="card-title">Se jugó la fecha 12 del Apertura de inferiores</h5>
+          <p class="card-text">Cinco enfrentamientos hubo en la jornada de este sábado. Resultados y posiciones en esta nota.</p>
         </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
     </div>
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-</html> 
+</html>
