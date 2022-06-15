@@ -17,14 +17,93 @@ body {
     align-items: center;
     flex-direction: column;
 }
+  
 
+/*publicidades*/
 
-.card-group {
-    width: 70%;
-    padding-top: 40px;
-    display: flex;
+.main {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 150px 150px;
 }
 
+.main__publi {
+    background-color: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__publi img { 
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+}
+
+/*publi posiciones*/
+
+.imgposiciones {
+    width: auto;
+    height: 800;
+}
+
+.container1 {  
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(5, 1fr); 
+    gap: 10px 40px; 
+}
+
+.div1 { 
+    grid-area: 1 / 3 / 2 / 4;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;    
+}
+
+.div2 { 
+    grid-area: 2 / 3 / 3 / 4;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat; 
+}
+.div3 { 
+    grid-area: 3 / 3 / 4 / 4;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat; 
+}
+.div4 { 
+    grid-area: 4 / 3 / 5 / 4;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: wheat; 
+}
+.div5 { 
+    grid-area: 5 / 3 / 6 / 4;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: wheat; 
+}
+.div6 { 
+    grid-area: 1 / 1 / 6 / 3;
+}
+  
+
+/*fin*/
 
 .header {
     padding-right: 30px;
@@ -32,8 +111,6 @@ body {
     height: 70px;
     justify-content: center; 
     align-items: center; 
-
-
 }
 
 .header img {
@@ -93,7 +170,93 @@ body {
 .fa-google:hover {
     opacity: 0.7;
 }
+/*fixture*/
+.fixturecontainer {
+    display: grid;
+    padding-top: 20px;
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1.25fr 1.25fr 0.5fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "fixture1 fixture1 publi1"
+      "fixture1 fixture1 publi2"
+      "fixture1 fixture1 publi3"
+      "fixture1 fixture1 publi4"
+      "fixture1 fixture1 publi5"
+      "fixture2 fixture2 ."
+      "fixture2 fixture2 ."
+      "fixture2 fixture2 ."
+      "fixture2 fixture2 ."
+      "fixture2 fixture2 ."
+      "fixture4 fixture4 ."
+      "fixture4 fixture4 ."
+      "fixture4 fixture4 ."
+      "fixture4 fixture4 ."
+      "fixture4 fixture4 ."
+      "fixture3 fixture3 ."
+      "fixture3 fixture3 ."
+      "fixture3 fixture3 ."
+      "fixture3 fixture3 ."
+      "fixture3 fixture3 ."
+      "fixture5 fixture5 ."
+      "fixture5 fixture5 ."
+      "fixture5 fixture5 ."
+      "fixture5 fixture5 ."
+      "fixture5 fixture5 .";  
+  }
 
+.publi1 { 
+    grid-area: publi1;
+    border: 1px solid black;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.publi2 { 
+    grid-area: publi2;
+    border: 1px solid black;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+.publi3 { 
+    grid-area: publi3;
+    border: 1px solid black;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+.publi4 { 
+    grid-area: publi4;
+    border: 1px solid black;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.publi5 { 
+    grid-area: publi5;
+    border: 1px solid black;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+ }
+.fixture1 { grid-area: fixture1; }
+.fixture2 { grid-area: fixture2; }
+.fixture4 { grid-area: fixture4; }
+.fixture3 { grid-area: fixture3; }
+.fixture5 { grid-area: fixture5; }
+/*fin*/
 /*qs*/
 .fondo {
     background-color: #32063a;
@@ -161,10 +324,6 @@ body {
     font-size: 5vh;
 }
 
-.imgposiciones {
-    width: auto;
-    height: 800;
-}
 
 /* media queris*/
     @media only screen and (max-width: 562px) {
