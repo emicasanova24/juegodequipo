@@ -1,0 +1,50 @@
+@mixin publicaracteristicas {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_carrusel {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 1fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      "carrusel carrusel publi"; 
+    justify-items: stretch; 
+  }
+  .carrusel { grid-area: carrusel; }
+  .publi {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(5, 1fr); 
+    gap: 10px 0px; 
+    grid-template-areas:
+      "uno"
+      "dos"
+      "tres"
+      "cuatro"
+      "cinco"; 
+    grid-area: publi; 
+  }
+  .uno { 
+    grid-area: uno; 
+    @include publicaracteristicas()
+}
+  .dos { 
+    grid-area: dos; 
+    @include publicaracteristicas()
+}
+  .tres { 
+    grid-area: tres; 
+    @include publicaracteristicas()
+}
+  .cuatro { 
+    grid-area: cuatro;
+    @include publicaracteristicas()
+}
+  .cinco { grid-area: cinco; 
+    @include publicaracteristicas()
+}

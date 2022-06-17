@@ -1,0 +1,29 @@
+.header {
+    padding-right: 30px;
+    display: flex;
+    height: 70px;
+    justify-content: center; 
+    align-items: center; 
+    & img {
+        width: 250px;
+        height: auto;
+        padding: 10px 20px;
+    }
+}
+
+.btn {
+    list-style: none;
+    color: white;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    & :hover {
+        background-color: white;
+    }
+}

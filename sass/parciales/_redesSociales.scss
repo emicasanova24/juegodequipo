@@ -1,0 +1,31 @@
+@mixin logosRedesCarac {
+    color: white;
+    align-items: center;
+}
+
+
+.fa {
+    padding: 20px;
+    margin: 2;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    &-facebook {
+        background: #3B5998;
+    @include logosRedesCarac; }
+    &-instagram {
+        background: #3B5998;
+    @include logosRedesCarac; }
+    &-google {
+        background: #3B5998;
+    @include logosRedesCarac; }
+    &-facebook:hover {
+        background: #3B5998;
+    @include logosRedesCarac; }
+    &-instagram:hover {
+        background: #3B5998;
+    @include logosRedesCarac; }
+    &-google:hover {
+        background: #3B5998;
+    @include logosRedesCarac; }
+    }

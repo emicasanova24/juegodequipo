@@ -1,0 +1,80 @@
+@mixin caractPublis {
+    border: 1px solid black;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*fixture*/
+.fixturecontainer {
+    display: grid;
+    padding-top: 20px;
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1.25fr 1.25fr 0.5fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "fixture1 fixture1 publi1"
+      "fixture1 fixture1 publi2"
+      "fixture1 fixture1 publi3"
+      "fixture1 fixture1 publi4"
+      "fixture1 fixture1 publi5"
+      "fixture2 fixture2 ."
+      "fixture2 fixture2 ."
+      "fixture2 fixture2 ."
+      "fixture2 fixture2 ."
+      "fixture2 fixture2 ."
+      "fixture4 fixture4 ."
+      "fixture4 fixture4 ."
+      "fixture4 fixture4 ."
+      "fixture4 fixture4 ."
+      "fixture4 fixture4 ."
+      "fixture3 fixture3 ."
+      "fixture3 fixture3 ."
+      "fixture3 fixture3 ."
+      "fixture3 fixture3 ."
+      "fixture3 fixture3 ."
+      "fixture5 fixture5 ."
+      "fixture5 fixture5 ."
+      "fixture5 fixture5 ."
+      "fixture5 fixture5 ."
+      "fixture5 fixture5 .";  
+  }
+
+.publi1 { 
+    grid-area: publi1;
+    @include caractPublis;
+}
+.publi2 { 
+    grid-area: publi2;
+    @include caractPublis;
+    
+ }
+.publi3 { 
+    grid-area: publi3;
+    @include caractPublis;;
+    
+ }
+.publi4 { 
+    grid-area: publi4;
+    @include caractPublis;
+    
+}
+.publi5 { 
+    grid-area: publi5;
+    @include caractPublis;
+     
+ }
+.fixture1 { grid-area: fixture1; }
+.fixture2 { grid-area: fixture2; }
+.fixture4 { grid-area: fixture4; }
+.fixture3 { grid-area: fixture3; }
+.fixture5 { grid-area: fixture5; }
+
+.imgfixture {
+    width: 850px;
+    height: auto;
+    display: block;
+    margin: 20px auto;   
+}
