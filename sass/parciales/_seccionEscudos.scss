@@ -7,11 +7,10 @@
     & img {
         width: 50px;
         height: auto;
-        padding: 7px;
-        & :hover {
-            transform: scale(1.2);
-        }
-    }
-    
+        padding: 7px;  
+}
+}
+.escudos img:hover {
+    transform: scale(1.2);
 }
 

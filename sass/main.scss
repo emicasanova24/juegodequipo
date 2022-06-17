@@ -1,4 +1,23 @@
-@import "./parciales/body";
+@-webkit-keyframes slide-fwd-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}100%{-webkit-transform:translateZ(160px);transform:translateZ(160px)}}@keyframes slide-fwd-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}100%{-webkit-transform:translateZ(160px);transform:translateZ(160px)}}
+
+.slide-fwd-center {
+    -webkit-animation:slide-fwd-center .45s cubic-bezier(.25,.46,.45,.94) both;
+    animation:slide-fwd-center .45s cubic-bezier(.25,.46,.45,.94) both
+}
+
+body {
+    background: rgb(110,9,121);
+    background: -moz-radial-gradient(circle, rgba(110,9,121,1) 38%, rgba(0,212,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(110,9,121,1) 38%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(circle, rgba(110,9,121,1) 38%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6e0979",endColorstr="#00d4ff",GradientType=1);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 @import "./parciales/itemsHeader";
 @import "./parciales/publiMain";
 @import "./parciales/carrusel_index";
