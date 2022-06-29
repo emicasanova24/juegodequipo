@@ -95,6 +95,7 @@ body {
 }
 
 .publi {
+  height: 500px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
@@ -360,10 +361,6 @@ body {
   width: auto;
 }
 
-.h5qs {
-  margin: 500px;
-}
-
 @media only screen and (max-width: 562px) {
   .header img {
     background-color: transparent;
@@ -380,9 +377,9 @@ body {
   }
 
   .container_carrusel {
-    display: grid;
+    display: none;
     grid-auto-columns: 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
     gap: 20px 20px;
     grid-template-areas: "carrusel" "publi";
@@ -391,6 +388,15 @@ body {
 
   .carrusel {
     grid-area: carrusel;
+  }
+
+  .publi {
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 30px 0px;
+    grid-template-areas: "uno" "dos";
+    grid-area: publi;
   }
 
   .publi {

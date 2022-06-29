@@ -17,16 +17,16 @@
   }
   .carrusel { grid-area: carrusel; }
   .publi {
+    height:;
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: repeat(5, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
     gap: 30px 0px; 
     grid-template-areas:
       "uno"
       "dos"
       "tres"
-      "cuatro"
-      "cinco"; 
+      "cuatro";
     grid-area: publi; 
   }
   .uno { 
