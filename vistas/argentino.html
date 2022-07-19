@@ -10,14 +10,17 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     
 </head>
 <body>
-  <nav class="navbar navbar-expand-xl navbar-dark bg-dark container-fluid">
-    <div class="container-fluid w-auto">
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark w-100">
+    <div class="container">
       <div class="collapse navbar-collapse show" id="navbarWithDropdown">
         <img src="../assets/logo.png" alt="Logo JDE" class="header">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" style="margin-left: auto; margin-right: auto;">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
           </li>
@@ -39,8 +42,8 @@
         </ul>
       </div>
       <section class="fa">
-        <a href="https://www.facebook.com/juegodquipo" class="fa fa-facebook"></a>
-        <a href="https://www.instagram.com/juegodequipo" class="fa fa-instagram"></a>
+        <a href="https://facebook.com/juegodquipo" class="fa fa-facebook"></a>
+        <a href="https://instagram.com/juegodequipo" class="fa fa-instagram"></a>
         <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnjkbbWTmDgrxmtbbslfJgBWMQmRBMCbKVRzTHvqXzQhZtWRRQcvfjZcjVjqKrdmmPHhS" class="fa fa-google"></a>
       </section>
     </div>
@@ -68,9 +71,37 @@
           <img src="../assets/proximamente.jpeg" alt="">
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          Acá formación del equipo
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
           <br>
-          <img src="../assets/proximamente.jpeg" alt="">
+          <img src="../assets/proximamente.jpeg"  alt="">
         </div>
         <div class="tab-pane fade" id="disabled" role="tabpanel" aria-labelledby="disabled-tab">
           Acá un poco de historia del equipo
@@ -80,6 +111,64 @@
       </div>
     </div>
   </div>
+
+
+<div class="w-100">
+  <footer class="text-center text-white" style="background-color: #3f51b5">
+    <div>
+      <section class="mt-5">
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="../index.html" class="text-white">Inicio</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="../vistas/posiciones.html" class="text-white">Posiciones</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="../vistas/fixture.html" class="text-white">Fixture</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="../vistas/qsomos.html" class="text-white">¿Quienes somos?</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="../vistas/contacto.html" class="text-white">Contacto</a>
+            </h6>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5" />
+      <section class="text-center mb-5">
+        <a href="https://www.facebook.com/juegodquipo" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/CasannovaE" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnjkbbWTmDgrxmtbbslfJgBWMQmRBMCbKVRzTHvqXzQhZtWRRQcvfjZcjVjqKrdmmPHhS" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.instagram.com/juegodequipo/" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="">Juego de equipo</a>
+    </div>
+  </footer>
+</div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

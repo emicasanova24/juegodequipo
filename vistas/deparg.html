@@ -7,76 +7,139 @@
     <title>Deportivo Argentino</title>
     <link rel="stylesheet" href="../css/destino.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
-<body>
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark container-fluid">
-        <div class="container-fluid w-auto">
-          <div class="collapse navbar-collapse show" id="navbarWithDropdown">
-            <img src="../assets/logo.png" alt="Logo JDE" class="header">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./posiciones.html">Posiciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./vistas/fixture.html">Fixture</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./vistas/partidos.html">Partidos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./qsomos.html">¿Quienes somos?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-          <section class="fa">
-            <a href="https://www.facebook.com/juegodquipo" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/juegodequipo" class="fa fa-instagram"></a>
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnjkbbWTmDgrxmtbbslfJgBWMQmRBMCbKVRzTHvqXzQhZtWRRQcvfjZcjVjqKrdmmPHhS" class="fa fa-google"></a>
-          </section>
-        </div>
-      </nav>
-      <div class="card mt-5">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Estadio</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+      
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark w-100">
+      <div class="container">
+        <div class="collapse navbar-collapse show" id="navbarWithDropdown">
+          <img src="../assets/logo.png" alt="Logo JDE" class="header">
+          <ul class="navbar-nav" style="margin-left: auto; margin-right: auto;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Formación</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./posiciones.html">Posiciones</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Historia</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./fixture.html">Fixture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./partidos.html">Partidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./qsomos.html">¿Quienes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
-        <div class="card-body">
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                Acá va foto del estadio del equipo
-                <br>
-              <img src="../assets/proximamente.jpeg" alt="">
-            </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              Acá formación del equipo
+        <section class="fa">
+          <a href="https://facebook.com/juegodquipo" class="fa fa-facebook"></a>
+          <a href="https://instagram.com/juegodequipo" class="fa fa-instagram"></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnjkbbWTmDgrxmtbbslfJgBWMQmRBMCbKVRzTHvqXzQhZtWRRQcvfjZcjVjqKrdmmPHhS" class="fa fa-google"></a>
+        </section>
+      </div>
+    </nav>
+  
+    <div class="card mt-5">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Estadio</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Formación</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Historia</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              Acá va foto del estadio del equipo
               <br>
-              <img src="../assets/proximamente.jpeg" alt="">
-            </div>
-            <div class="tab-pane fade" id="disabled" role="tabpanel" aria-labelledby="disabled-tab">
-              Acá un poco de historia del equipo
-              <br>
-              <img src="../assets/proximamente.jpeg" alt="">
-            </div>
+            <img src="../assets/proximamente.jpeg" alt="">
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            Acá formación del equipo
+            <br>
+            <img src="../assets/proximamente.jpeg"  alt="">
+          </div>
+          <div class="tab-pane fade" id="disabled" role="tabpanel" aria-labelledby="disabled-tab">
+            Acá un poco de historia del equipo
+            <br>
+            <img src="../assets/proximamente.jpeg" alt="">
           </div>
         </div>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
-</html>
+    </div>
+  
+  
+  <div class="w-100">
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+      <div>
+        <section class="mt-5">
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="../index.html" class="text-white">Inicio</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="../vistas/posiciones.html" class="text-white">Posiciones</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="../vistas/fixture.html" class="text-white">Fixture</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="../vistas/qsomos.html" class="text-white">¿Quienes somos?</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="../vistas/contacto.html" class="text-white">Contacto</a>
+              </h6>
+            </div>
+          </div>
+        </section>
+  
+        <hr class="my-5" />
+        <section class="text-center mb-5">
+          <a href="https://www.facebook.com/juegodquipo" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/CasannovaE" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnjkbbWTmDgrxmtbbslfJgBWMQmRBMCbKVRzTHvqXzQhZtWRRQcvfjZcjVjqKrdmmPHhS" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="https://www.instagram.com/juegodequipo/" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="">Juego de equipo</a>
+      </div>
+    </footer>
+  </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+  </html>
